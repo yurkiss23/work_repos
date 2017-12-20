@@ -59,7 +59,7 @@ int main()
 	cout << "atythmetic mean = " << mean << endl;*/
 
 	//ex.5
-	int leght, count=0;
+	/*int leght, count=0;
 	char symb;
 	cout << "enter symbol and leght of line" << endl;
 	cin >> symb >> leght;
@@ -67,6 +67,60 @@ int main()
 		cout << symb;
 		count++;
 	}
-	cout << "\nend of line" << endl;
+	cout << "\nend of line" << endl;*/
+
+	//ex.6
+	int rang1, rang2, min, max, i;
+	cout << "enter range: ";
+	cin >> rang1 >> rang2;
+	if (rang1 < rang2) {
+		min = rang1; max = rang2;
+	}
+	else if (rang1 > rang2) {
+		min = rang2; max = rang1;
+	}
+	else {
+		cout << "range uncorrect" << endl;
+	}
+	//умова 1
+	cout << "parni:" << endl;
+	i = min;
+	while (i <= max) {
+		if (i % 2 == 0) {
+			cout << i << endl;
+			i += 2;
+		}
+		else {
+			i++;
+		}
+	}
+	//умова 2
+	cout << "neparni:" << endl;
+	i = min;
+	if (i % 2 != 0) {
+		while (i <= max) {
+			cout << i << endl;
+			i += 2;
+		}
+	}
+	else {
+		i++;
+		while (i <= max) {
+			cout << i << endl;
+			i += 2;
+		}
+	}
+	//умова 3
+	cout << "kpatni 7:" << endl;
+	i = min;
+	while (i <= max) {
+		if (i % 7 == 0) {
+			cout << i << endl;
+			i += 7;
+		}
+		else {
+			i++;
+		}
+	}
 	return 0;
 }
