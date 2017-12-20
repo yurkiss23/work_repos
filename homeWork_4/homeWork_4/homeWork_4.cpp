@@ -49,13 +49,24 @@ int main()
 	cout << "sum = " << sum << endl;*/
 
 	//ex.4
-	int start = 1, end = 1000, i = 1, sum = 0;
+	/*int start = 1, end = 1000, i = 1, sum = 0;
 	double mean;
 	do {
 		sum += start; start++;
 		cout << "iteration: " << i++ << endl;
 	} while (i <= end);
 	mean = (double)sum / --i;
-	cout << "atythmetic mean = " << mean << endl;
+	cout << "atythmetic mean = " << mean << endl;*/
+
+	//ex.5
+	int leght, count=0;
+	char symb;
+	cout << "enter symbol and leght of line" << endl;
+	cin >> symb >> leght;
+	while (count < leght) {
+		cout << symb;
+		count++;
+	}
+	cout << "\nend of line" << endl;
 	return 0;
 }
