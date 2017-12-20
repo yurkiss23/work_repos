@@ -31,9 +31,14 @@ int main()
 	case actions::plus:res = dig1 + dig2; cout << dig1 << action << dig2 << "=" << res << endl; break;
 	case actions::minus:res = dig1 - dig2; cout << dig1 << action << dig2 << "=" << res << endl; break;
 	case actions::mult:res = dig1 * dig2; cout << dig1 << action << dig2 << "=" << res << endl; break;
-	case actions::div:res = dig1 / dig2; cout << dig1 << action << dig2 << "=" << res << endl; break;
-	default:cout << "value uncorrect" << endl; break;
+	case actions::div:
+		if (dig2 != 0) {
+			res = dig1 / dig2; cout << dig1 << action << dig2 << "=" << res << endl; break;
+		}
+	default:cout << "action uncorrect" << endl; break;
 	}
+
+	//ex.3
 
 	return 0;
 }
