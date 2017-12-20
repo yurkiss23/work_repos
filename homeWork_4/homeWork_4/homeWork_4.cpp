@@ -19,7 +19,7 @@ int main()
 	}*/
 
 	//ex.2
-	double dig1, dig2, res;
+	/*double dig1, dig2, res;
 	//char '+'
 	enum actions{plus='+',minus='-',mult='*',div='/'};
 	cout << "enter 2 digits: " << endl;
@@ -36,9 +36,16 @@ int main()
 			res = dig1 / dig2; cout << dig1 << action << dig2 << "=" << res << endl; break;
 		}
 	default:cout << "action uncorrect" << endl; break;
-	}
+	}*/
 
 	//ex.3
-
+	int a, max = 500, sum = 0;
+	cout << "enter your digit: ";
+	cin >> a;
+	while (a <= max) {
+		sum += a;
+		cout << a++ << endl;
+	}
+	cout << "sum = " << sum << endl;
 	return 0;
 }
