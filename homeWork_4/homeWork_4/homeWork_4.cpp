@@ -70,7 +70,7 @@ int main()
 	cout << "\nend of line" << endl;*/
 
 	//ex.6
-	int rang1, rang2, min, max, i;
+	/*int rang1, rang2, min, max, i;
 	cout << "enter range: ";
 	cin >> rang1 >> rang2;
 	if (rang1 < rang2) {
@@ -121,6 +121,18 @@ int main()
 		else {
 			i++;
 		}
+	}*/
+	
+	//ex.7
+	
+	//ex.8
+	int a;
+	unsigned long int n = 1;
+	int i = 1;
+	cout << "enter digit: ";cin >> a;
+	while (i <= a) {
+		n *= i; i++;
 	}
+	cout << n << endl;
 	return 0;
 }
