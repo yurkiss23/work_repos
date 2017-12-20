@@ -39,13 +39,23 @@ int main()
 	}*/
 
 	//ex.3
-	int a, max = 500, sum = 0;
+	/*int a, max = 500, sum = 0;
 	cout << "enter your digit: ";
 	cin >> a;
 	while (a <= max) {
 		sum += a;
 		cout << a++ << endl;
 	}
-	cout << "sum = " << sum << endl;
+	cout << "sum = " << sum << endl;*/
+
+	//ex.4
+	int start = 1, end = 1000, i = 1, sum = 0;
+	double mean;
+	do {
+		sum += start; start++;
+		cout << "iteration: " << i++ << endl;
+	} while (i <= end);
+	mean = (double)sum / --i;
+	cout << "atythmetic mean = " << mean << endl;
 	return 0;
 }
