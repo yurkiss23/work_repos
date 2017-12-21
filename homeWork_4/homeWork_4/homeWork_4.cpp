@@ -168,7 +168,7 @@ int main()
 	cout << "kilkist cifr: " << sum << endl;*/
 
 	//ex.11
-	int pin, dig, menu;
+	/*int pin, dig, menu;
 	enum menus{recent_balance=1,cashout,exit};
 	cout << "\n\t..::BANKOMAT::.." << endl;
 	cout << "\n\tenter pin" << endl;
@@ -187,7 +187,7 @@ int main()
 	}
 	else {
 		cout << "\n\tuncorrect pin!" << endl;
-	}
+	}*/
 	
 	return 0;
 }
