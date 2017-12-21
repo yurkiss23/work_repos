@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 	//ex.1
-	/*const int M = 100, DM = 10, MM = 10;
+	const int M = 100, DM = 10, MM = 10;
 	double sm, res;
 	enum units{m=1,dm,mm};
 	int unit;
@@ -16,10 +16,10 @@ int main()
 	case units::dm:res = sm / DM; cout << sm << "sm = " << res << "dm\n"; break;
 	case units::mm:res = sm*MM; cout << sm << "sm = " << res << "mm\n"; break;
 	default:cout << "uncorrect value\n"; break;
-	}*/
+	}
 
 	//ex.2
-	/*double dig1, dig2, res;
+	double dig1, dig2, res;
 	//char '+'
 	enum actions{plus='+',minus='-',mult='*',div='/'};
 	cout << "enter 2 digits: " << endl;
@@ -36,30 +36,30 @@ int main()
 			res = dig1 / dig2; cout << dig1 << action << dig2 << "=" << res << endl; break;
 		}
 	default:cout << "action uncorrect" << endl; break;
-	}*/
+	}
 
 	//ex.3
-	/*int a, max = 500, sum = 0;
+	int a, max = 500, sum = 0;
 	cout << "enter your digit: ";
 	cin >> a;
 	while (a <= max) {
 		sum += a;
 		cout << a++ << endl;
 	}
-	cout << "sum = " << sum << endl;*/
+	cout << "sum = " << sum << endl;
 
 	//ex.4
-	/*int start = 1, end = 1000, i = 1, sum = 0;
+	int start = 1, end = 1000, i = 1, sum = 0;
 	double mean;
 	do {
 		sum += start; start++;
 		cout << "iteration: " << i++ << endl;
 	} while (i <= end);
 	mean = (double)sum / --i;
-	cout << "atythmetic mean = " << mean << endl;*/
+	cout << "atythmetic mean = " << mean << endl;
 
 	//ex.5
-	/*int leght, count=0;
+	int leght, count=0;
 	char symb;
 	cout << "enter symbol and leght of line" << endl;
 	cin >> symb >> leght;
@@ -67,10 +67,10 @@ int main()
 		cout << symb;
 		count++;
 	}
-	cout << "\nend of line" << endl;*/
+	cout << "\nend of line" << endl;
 
 	//ex.6
-	/*int rang1, rang2, min, max, i;
+	int rang1, rang2, min, max, i;
 	cout << "enter range: ";
 	cin >> rang1 >> rang2;
 	if (rang1 < rang2) {
@@ -121,30 +121,30 @@ int main()
 		else {
 			i++;
 		}
-	}*/
+	}
 	
 	//ex.7
-	/*const double add = 1.5;
+	const double add = 1.5;
 	double lev = 0;
 	int year = 2017, end = 25, count = 0;
 	cout << "\n\tYear\tLevels" << endl;
 	while (count <= end) {
 		cout << "\t" << year++ << "\t+" << lev << endl;
 		lev += add, count++;
-	}*/
+	}
 	
 	//ex.8
-	/*int a;
+	int a;
 	unsigned long int n = 1;
 	int i = 1;
 	cout << "enter digit: ";cin >> a;
 	while (i <= a) {
 		n *= i; i++;
 	}
-	cout << n << endl;*/
+	cout << n << endl;
 	
 	//ex.9
-	/*unsigned int dig, count=1;
+	unsigned int dig, count=1;
 	cout << "enter digit: ";
 	cin >> dig;
 	cout << "\n\ndilniki chisla \'" << dig << "\': ";
@@ -156,19 +156,19 @@ int main()
 			count++;
 		}
 	}
-	cout << "\b\b.";*/
+	cout << "\b\b.";
 
 	//ex.10
-	/*int dig, sum = 0;
+	int dig, sum = 0;
 	cout << "enter digit: ";
 	cin >> dig;
 	while (dig % 10) {
 		sum++; dig /= 10;
 	}
-	cout << "kilkist cifr: " << sum << endl;*/
+	cout << "kilkist cifr: " << sum << endl;
 
 	//ex.11
-	/*int pin, dig, menu;
+	int pin, dig, menu;
 	enum menus{recent_balance=1,cashout,exit};
 	cout << "\n\t..::BANKOMAT::.." << endl;
 	cout << "\n\tenter pin" << endl;
@@ -187,7 +187,7 @@ int main()
 	}
 	else {
 		cout << "\n\tuncorrect pin!" << endl;
-	}*/
+	}
 	
 	return 0;
 }
