@@ -144,7 +144,7 @@ int main()
 	cout << n << endl;*/
 	
 	//ex.9
-	unsigned int dig, count=1;
+	/*unsigned int dig, count=1;
 	cout << "enter digit: ";
 	cin >> dig;
 	cout << "\n\ndilniki chisla \'" << dig << "\': ";
@@ -156,6 +156,15 @@ int main()
 			count++;
 		}
 	}
-	cout << "\b\b.";
+	cout << "\b\b.";*/
+
+	//ex.10
+	int dig, sum = 0;
+	cout << "enter digit: ";
+	cin >> dig;
+	while (dig % 10) {
+		sum++; dig /= 10;
+	}
+	cout << "kilkist cifr: " << sum << endl;
 	return 0;
 }
