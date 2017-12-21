@@ -124,14 +124,15 @@ int main()
 	}*/
 	
 	//ex.7
-	const double add = 1.5;
+	/*const double add = 1.5;
 	double lev = 0;
 	int year = 2017, end = 25, count = 0;
 	cout << "\n\tYear\tLevels" << endl;
 	while (count <= end) {
 		cout << "\t" << year++ << "\t+" << lev << endl;
 		lev += add, count++;
-	}
+	}*/
+	
 	//ex.8
 	/*int a;
 	unsigned long int n = 1;
@@ -143,6 +144,18 @@ int main()
 	cout << n << endl;*/
 	
 	//ex.9
-
+	unsigned int dig, count=1;
+	cout << "enter digit: ";
+	cin >> dig;
+	cout << "\n\ndilniki chisla \'" << dig << "\': ";
+	while (count <= dig) {
+		if (!(dig%count)) {
+			cout << count++ << ", ";
+		}
+		else {
+			count++;
+		}
+	}
+	cout << "\b\b.";
 	return 0;
 }
