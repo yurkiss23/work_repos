@@ -159,12 +159,35 @@ int main()
 	cout << "\b\b.";*/
 
 	//ex.10
-	int dig, sum = 0;
+	/*int dig, sum = 0;
 	cout << "enter digit: ";
 	cin >> dig;
 	while (dig % 10) {
 		sum++; dig /= 10;
 	}
-	cout << "kilkist cifr: " << sum << endl;
+	cout << "kilkist cifr: " << sum << endl;*/
+
+	//ex.11
+	int pin, dig, menu;
+	enum menus{recent_balance=1,cashout,exit};
+	cout << "\n\t..::BANKOMAT::.." << endl;
+	cout << "\n\tenter pin" << endl;
+	cout << "\t"; cin >> pin;
+	if (!pin) {
+		do {
+			cout << "\nselect menu (1-recent balance, 2-cashout, 3-exit): ";
+			cin >> menu;
+			switch (menu) {
+			case menus::recent_balance:cout << "\n\tyour balance: $1000000!\n\t\t:D)))" << endl; break;
+			case menus::cashout:cout << "\n\tenter sum: $"; cin >> dig; cout << "\n\tnot enough money!\n\t\t:D)))" << endl; break;
+			case menus::exit:cout << "\n\t\tbay!" << endl; break;
+			default:cout << "\n\tuncorrect menu, try again!" << endl; break;
+			}
+		} while (menu!=3);
+	}
+	else {
+		cout << "\n\tuncorrect pin!" << endl;
+	}
+	
 	return 0;
 }
