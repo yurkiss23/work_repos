@@ -60,5 +60,17 @@ int main()
 		}
 	}
 	cout << "\nlast digit 1: " << total_1 << "\nlast digit 7: " << total_7 << endl;*/
+
+	//ex.5
+	/*int N;
+	float sum = 0, add = 1;
+	cin >> N;
+	for (int i = 1; i <= N; ) {
+		sum += add;
+		cout << "\nsum: " << sum << " add: " << add;
+		i++;
+		add = sqrt(i);
+	}
+	cout << "\ntotal sum: " << sum << endl;*/
 	return 0;
 }
