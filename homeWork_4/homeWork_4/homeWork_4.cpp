@@ -20,7 +20,6 @@ int main()
 
 	//ex.2
 	double dig1, dig2, res;
-	//char '+'
 	enum actions{plus='+',minus='-',mult='*',div='/'};
 	cout << "enter 2 digits: " << endl;
 	char action;
