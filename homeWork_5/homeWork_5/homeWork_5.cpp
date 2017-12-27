@@ -74,7 +74,7 @@ int main()
 	cout << "\ntotal sum: " << sum << endl;*/
 
 	//ex.6
-	int max = 10, num_a = 0;
+	/*int max = 10, num_a = 0;
 	char symb;
 	for (int i = 0; i < max; ++i) {
 		cin >> symb;
@@ -87,11 +87,24 @@ int main()
 			break;
 		}
 		//v.2
-		/*if (symb == '.') {
+		if (symb == '.') {
 		cout << "input stop" << endl;
 		i = max;
-		}*/
+		}
 	}
-	cout << "\nnumber of \'a\': " << num_a;
+	cout << "\nnumber of \'a\': " << num_a;*/
+
+	//ex.7
+	/*unsigned int dig;
+	int sum = 0, num = 0, a;
+	cin >> dig;
+	for (; dig % 10;) {
+		a = dig % 10;
+		dig /= 10;
+		sum += a;
+		num++;
+		cout << a << endl;
+	}
+	cout << "sum: " << sum << "\nnumber: " << num;*/
 	return 0;
 }
