@@ -5,11 +5,11 @@ int main()
 	//ex.8
 	cout << "\t..::Cell-phone::.." << endl;
 	const int PIN = 1111;
-	int pin, i = 1, action;
+	int pin, i = 0, action;
 	enum actions{cash=1,call,send,lock};
-	cout << "enter pin: ";
-	cin >> pin;
-	//while (i < 3) {
+	do {
+		cout << "enter pin: ";
+		cin >> pin;
 		if (pin == PIN) {
 			do {
 				cout << "select action: 1-add maney, 2-call, 3-send sms, 4-lock your phone" << endl;
@@ -18,16 +18,22 @@ int main()
 				case actions::cash:cout << "add money!" << endl; break;
 				case actions::call:cout << "enter phone number" << endl; break;
 				case actions::send:cout << "enter text" << endl; break;
-				//case actions::lock:cout << "locked!" << endl; break; continue;
+				case actions::lock:
+					i = 3;
+					cout << "locked!" << endl; break;
+				default:cout << "uncorrect value!" << endl; break;
 				}
 			} while (action != 4);
 		}
-		else {
-			cout << "invalid pin! try again!" << endl;
-			cin >> pin;
+		else if (i == 2) {
+			cout << "invalid pin!" << endl;
 			i++;
 		}
-	//}
-	cout << "bay!" << endl;
+		else {
+			cout << "invalid pin! try again!" << endl;
+			i++;
+		}
+	} while (i < 3);
+	cout << "bye!" << endl;
 	return 0;
 }
